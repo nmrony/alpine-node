@@ -24,7 +24,7 @@ $cd /path/to/project/root
 #install dependencies
 $docker run --rm --name awesome_node_app_install -v $(pwd):/app -w /app nmrony/node-alpine npm i
 #Running App
-$docker run --name awesome_node_app -v $(pwd):/app -w -p 80:<your-app-port> /app nmrony/node-alpine node start-file.js
+$docker run --name awesome_node_app -v $(pwd):/app -w -p 80:<your-app-port> /app nmrony/node-alpine node [app-entrypoint.js]
 
 ```
 

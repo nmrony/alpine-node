@@ -4,8 +4,11 @@ This image is built on **[Alpine Linux][1] Edge Version** to maintain small foot
 
 Available Versions
 -------------------
-1. Current Versions
-   - `latest`, `v6.2.1` with `NPM` v3.9.5
+**Current Versions**
+ 1. `latest`, `6.2.1` with `NPM` v3.9.5
+
+**LTS Versions**
+  1. `latest`, `4.4.5` with `NPM` v2.15.6  
 
 Checking Versions
 -----------------

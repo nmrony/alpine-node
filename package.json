@@ -5,6 +5,7 @@
   "description": "Minimal NodeJS Docker Image",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/nmrony/alpine-node/issues"
   },
-  "homepage": "https://github.com/nmrony/alpine-node#readme"
+  "homepage": "https://github.com/nmrony/alpine-node#readme",
+  "devDependencies": {
+    "commitizen": "2.8.2",
+    "cz-conventional-changelog": "1.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

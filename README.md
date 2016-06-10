@@ -37,8 +37,11 @@ ADD . .
 
 RUN npm install
 
-EXPOSE 3000
-CMD ["node", "index.js"]
+# Replace app-port with your own one
+EXPOSE [app-port]
+
+# Replace app-entrypoint.js with your own one
+CMD ["node", "app-entrypoint.js"]
 ```
 
 Running your App

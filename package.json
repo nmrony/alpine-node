@@ -1,16 +1,17 @@
 {
   "name": "alpine-node",
-  "version": "1.0.0",
+  "version":"0.0.0-sematically-released",
   "private": true,
   "description": "Minimal NodeJS Docker Image",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "echo \"Error: no test specified and will add later\" && exit 1"
+    "test": "echo \"Error: no test specified and will add later\" && exit 1",
+    "semantic-release": "semantic-release pre && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nmrony/alpine-node.git"
+    "url": "https://github.com/nmrony/alpine-node.git"
   },
   "author": "Nur Rony <pro.nmrony@gmail.com> (http://nmrony.info/)",
   "license": "MIT",
@@ -20,7 +21,8 @@
   "homepage": "https://github.com/nmrony/alpine-node#readme",
   "devDependencies": {
     "commitizen": "2.8.2",
-    "cz-conventional-changelog": "1.1.6"
+    "cz-conventional-changelog": "1.1.6",
+    "semantic-release": "^4.3.5"
   },
   "config": {
     "commitizen": {

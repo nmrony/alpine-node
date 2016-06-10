@@ -31,7 +31,8 @@ FROM nmrony/alpine-node
 WORKDIR /app
 ADD . .
 
-# If you have to compile modules with node-gyp, you'll need extra tools
+# If you have to compile modules with node-gyp,
+# you'll need extra tools. Uncomment the line below
 # RUN apk add --no-cache make gcc g++ python
 
 RUN npm install

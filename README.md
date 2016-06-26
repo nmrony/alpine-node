@@ -52,9 +52,9 @@ To run your App run the following command given below (You need to change the pa
 ```sh
 $cd /path/to/project/root
 #install dependencies
-$docker run --rm --name awesome_node_app_install -v $(pwd):/app -w /app nmrony/node-alpine npm i
+$docker run --rm --name awesome_node_app_install -v $(pwd):/app -w /app nmrony/alpine-node npm i
 #Running App
-$docker run --name awesome_node_app -v $(pwd):/app -w /app -p 80:<your-app-port> nmrony/node-alpine node [app-entrypoint.js]
+$docker run --name awesome_node_app -v $(pwd):/app -w /app -p 80:<your-app-port> nmrony/alpine-node node [app-entrypoint.js]
 ```
 
 [1]: http://www.alpinelinux.org/

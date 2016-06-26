@@ -8,7 +8,8 @@ Available Versions
  1. `latest`, `6.2.1` with `NPM v3.9.5`
 
 **LTS Versions**
-  1. `lts`, `4.4.5` with `NPM v2.15.6`  
+  1. `lts`, `4.4.6` with `NPM v2.15.8`  
+  1. `4.4.6` with `NPM v2.15.6`
 
 Checking Versions
 -----------------

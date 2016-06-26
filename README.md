@@ -17,18 +17,18 @@ Checking Versions
 To run container run the following command
 ```sh
 $docker run --rm --name node_v nmrony/alpine-node node -v
-#6.2.1
+6.2.2
 $docker run --rm --name npm_v nmrony/alpine-node npm -v
-#3.9.5
+3.10.2
 ```
 Using as Base Image
 -------------------
 If you want to use it as your base image you your `Dockerfile` should look like below
 ```sh
 FROM nmrony/alpine-node
-# FROM nmrony/alpine-node:6.2.1
+# FROM nmrony/alpine-node:6.2.2
 # FROM nmrony/alpine-node:lts
-# FROM nmrony/alpine-node:4.4.5
+# FROM nmrony/alpine-node:4.4.6
 
 WORKDIR /app
 ADD . .
@@ -54,7 +54,7 @@ $cd /path/to/project/root
 #install dependencies
 $docker run --rm --name awesome_node_app_install -v $(pwd):/app -w /app nmrony/node-alpine npm i
 #Running App
-$docker run --name awesome_node_app -v $(pwd):/app -w -p 80:<your-app-port> /app nmrony/node-alpine node [app-entrypoint.js]
+$docker run --name awesome_node_app -v $(pwd):/app -w /app -p 80:<your-app-port> nmrony/node-alpine node [app-entrypoint.js]
 ```
 
 [1]: http://www.alpinelinux.org/

@@ -9,8 +9,9 @@ Available Versions
  1. `6.2.1` with `NPM v3.9.5`
 
 **LTS Versions**
-  1. `lts`, `4.4.6` with `NPM v2.15.8`  
-  1. `4.4.6` with `NPM v2.15.6`
+  1. `lts`, `4.5.0` with `NPM v2.15.11`  
+
+> **Check Tags to find out available NodeJS version**
 
 Checking Versions
 -----------------
@@ -28,7 +29,7 @@ If you want to use it as your base image you your `Dockerfile` should look like 
 FROM nmrony/alpine-node
 # FROM nmrony/alpine-node:6.2.2
 # FROM nmrony/alpine-node:lts
-# FROM nmrony/alpine-node:4.4.6
+# FROM nmrony/alpine-node:4.5.0
 
 WORKDIR /app
 ADD . .

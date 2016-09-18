@@ -5,8 +5,7 @@ This image is built on **[Alpine Linux][1] Edge Version** to maintain small foot
 Available Versions
 -------------------
 **Current Versions**
- 1. `latest`, `6.2.2` with `NPM v3.10.2`
- 1. `6.2.1` with `NPM v3.9.5`
+ 1. `latest`, `6.6.0` with `NPM v3.10.7`
 
 **LTS Versions**
   1. `lts`, `4.5.0` with `NPM v2.15.11`  
@@ -18,16 +17,16 @@ Checking Versions
 To run container run the following command
 ```sh
 $docker run --rm --name node_v nmrony/alpine-node node -v
-6.2.2
+6.6.0
 $docker run --rm --name npm_v nmrony/alpine-node npm -v
-3.10.2
+3.10.7
 ```
 Using as Base Image
 -------------------
 If you want to use it as your base image you your `Dockerfile` should look like below
 ```sh
 FROM nmrony/alpine-node
-# FROM nmrony/alpine-node:6.2.2
+# FROM nmrony/alpine-node:6.6.0
 # FROM nmrony/alpine-node:lts
 # FROM nmrony/alpine-node:4.5.0
 

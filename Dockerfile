@@ -3,7 +3,7 @@ FROM alpine:edge
 MAINTAINER Nur Rony <pro.nmrony@gmail.com>
 
 # ENV VERSION=v0.10.45 CFLAGS="-D__USE_MISC" NPM_VERSION=2
-ENV VERSION=v4.5.0 NPM_VERSION=2
+ENV VERSION=v6.6.0 NPM_VERSION=3
 
 # For base builds
 # ENV CONFIG_FLAGS="--without-npm" RM_DIRS=/usr/include
